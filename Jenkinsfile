@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                git branch: 'main', url: 'file:///C:/ruta/a/jenkins-hello-world.git'
+                git branch: 'main', url: 'https://github.com/vanessamaldonado/Jenkins-practica09'
                 sh 'mvn clean package -DskipTests=true'
                 archiveArtifacts 'target/hello-demo-*.jar'
             }
