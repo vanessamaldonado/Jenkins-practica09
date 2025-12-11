@@ -1,0 +1,12 @@
+package com.example;
+
+public class App {
+
+    public static void main(String[] args) {
+        System.out.println("Hello from Jenkins Pipeline Example!");
+    }
+
+    public String getMessage() {
+        return "Hello World";
+    }
+}
